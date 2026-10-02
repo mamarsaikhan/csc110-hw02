@@ -15,7 +15,7 @@ def compute_multadd(a, b):
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
     mult_result = a*b
-    print(f"mult result: {mult_result}") # shows the words "mult result:" followed by that number
+    print(f"mult result: {mult_result}") # f replaces {mult_result} with the number stored in that variable
     add_result = a+b
     print(f"add result: {add_result}") # {} gives a place for python to drop in a value; whatever is inside is treated as a code
     return mult_result/add_result # gives the first variable divided by the second
@@ -26,7 +26,12 @@ def print_fancy(a, b, ab_multadd):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+    print("*" * 16)
+    print("RESULTS:")
+    print(f"first number: {a}")
+    print(f"second number: {b}")
+    print(f"multadd result: {ab_multadd}")
+    print("=" * 16)
 
 def main ():
     # ADD a Docstring for this function
@@ -44,13 +49,14 @@ def main ():
     #  store the returned value in a variable called xy_multadd
 
     # TODO: add your call instead of this line
+    xy_multadd = compute_multadd(x,y)
 
     # Task 3.2:
     #  Complete The line below to call print_fancy
     #  the call should provide the arguments x, y, and xy_multadd you obtained above;
 
     # TODO: add your call instead of this line
-
+    print_fancy(x, y, xy_multadd)
 
     # Do not modify this final print statement
     print("The End")
