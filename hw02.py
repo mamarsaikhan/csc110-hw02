@@ -14,7 +14,11 @@ def compute_multadd(a, b):
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+    mult_result = a*b
+    print(f"mult result: {mult_result}") # shows the words "mult result:" followed by that number
+    add_result = a+b
+    print(f"add result: {add_result}") # {} gives a place for python to drop in a value; whatever is inside is treated as a code
+    return mult_result/add_result # gives the first variable divided by the second
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
@@ -32,6 +36,7 @@ def main ():
     #  store the returned values into two variables: x and y
 
     # TODO: add your call instead of this line
+    x, y = read_two_ints()
 
     # Task 2.2:
     #  Add one line below to call multadd (note that it returns one value)
